@@ -106,8 +106,7 @@ for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
     if (sec - int(sec)) < 0.01:
         print(int(sec))
 
-print("Done!")
-print("\n")
+print("Done!\n")
 # print(freqDiffs)
 def findAcc(diffs):
     return round(100 - np.median(diffs))
@@ -119,7 +118,7 @@ acc = str(bestAcc)
 if bestAcc >= 95:
     print("On pitch; " + acc + '%'' accurate!')
 else:
-    print("Not on pitch :/")
+    print("Not on pitch :/\n")
 
 stream.stop_stream()
 stream.close()
